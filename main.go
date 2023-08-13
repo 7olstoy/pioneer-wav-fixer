@@ -10,7 +10,7 @@ import (
 func main() {
 	// Define a flag for the folder path
 	folderPtr := flag.String("folder", ".", "Path to the folder containing WAV files")
-	overwritePtr := flag.Bool("overwrite", false, "Overwrite files with non-0001 20-21 bytes value, i.e. fix the main issue")
+	overwritePtr := flag.Bool("overwrite", false, "Overwrite files with non-0100 20-21 bytes value, i.e. fix the main issue")
 	showAllPtr := flag.Bool("list", false, "Show all files and 20-21 bytes value")
 
 	// Parse the command-line flags
@@ -58,7 +58,7 @@ func main() {
 				continue
 			}
 
-			// If overwrite flag is true, update the file with 0001 value
+			// If overwrite flag is true, update the file with 01 00 value
 			if *overwritePtr {
 				_, err := wavFile.WriteAt([]byte{1, 0}, 20) // Write 0001 at the correct position
 				if err != nil {
