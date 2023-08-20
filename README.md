@@ -1,19 +1,18 @@
 # pioneer-wav-fixer
 
-### About
+## About
 Many files from bandcamp has the "unsupported file type error" issue with old Pioneer XDJ/CDJ decks.
 This is because of WAV_EXT flag into these files. 
 
-For solving this we simply need to rewrite 20th and 21th bytes of these wav-files to ```01 00``` and the Pioneers will start to understand the files.
+For solving this we need to rewrite 20th and 21th bytes of these wav-files to ```01 00``` and the Pioneer old decks will play the files.
 
-### How to run
-<blockquote>
-<span style="color:red">Make a backup of your files before running the tool!</span>
-</blockquote>
+## How to run
+> :warning:
+> **Make a backup of your files before running the tool!**
 
 You can buld this project with this repo or use binary from [latest](https://github.com/7olstoy/pioneer-wav-fixer/releases/) release (amd64 and arm64 version).
 
-##### MacOS
+#### MacOS
 
 <details>
 <summary>Download and allow the app</summary>
@@ -63,5 +62,5 @@ and you will see all broken files. For fix it:
 
 </details>
 
-### Thanks
+## Thanks
 Big up to pioneer [forum](https://forums.pioneerdj.com/hc/en-us/community/posts/360043048651-E-8305-unsupported-file-type-error) and [this](https://github.com/camm9909/WavPatcher) old python version.
