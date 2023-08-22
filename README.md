@@ -30,8 +30,11 @@ Run it:
 ./pioneer_wav_fixer help
 ```
 Close the warning and open settings on your Mac, choose Apple menu > System Settings, then click Privacy & Security in the sidebar. After you need to approve the running on this app pioneer_wav_fixer and run it again:
+
 <img title="warning" src="/images/macos-warning.png">
+
 <img title="settings" src="/images/macos-settings.png">
+
 ```
 ./pioneer_wav_fixer help
 ```
