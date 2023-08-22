@@ -19,7 +19,7 @@ You can buld this project with this repo or use binary from [latest](https://git
 
 Open terminal and download the app:
 ```
-curl -L https://github.com/7olstoy/pioneer-wav-fixer/releases/latest/download/pioneer_wav_fixer_${uname -m} --output pioneer_wav_fixer
+curl -L https://github.com/7olstoy/pioneer-wav-fixer/releases/latest/download/pioneer_wav_fixer_$(uname -m) --output pioneer_wav_fixer
 ```
 Add permission for execute:
 ```
